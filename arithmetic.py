@@ -22,8 +22,7 @@ def square(num1):
 
 def cube(num1):
     # Needs only one argument
-    return num1 * num1 * num1
-
+    return (num1 * num1 * num1)
 
 def power(num1, num2):
     return num1 ** num2  # ** = exponent operator
