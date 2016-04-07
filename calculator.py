@@ -1,24 +1,19 @@
-"""
-calculator.py
-
-Using our arithmetic.py file from Exercise02, create the
-calculator program yourself in this file.
-"""
-
-
+"""Calculate various mathematical functions"""
+#imports all arithmetic.py (module)
 from arithmetic import *
-"""defining arithmetic to open the arithmetic.py file and
-"""
+
+#initiate blank prompt for user input
 user_input_raw = raw_input()
-#user inputs string
-#take that string and break it up/ unpack it
+#create a list from the raw input
 user_input_list = user_input_raw.split(" ")
-# now identify what each element in the string means
+#Assign variables to list elements
 operator = user_input_list[0]
 num1 = int(user_input_list[1])
 num2 = int(user_input_list[2])
 
-if operator == "+":
+#Evaluate operator variable
+if operator == "+": 
+    #Create variable for module call
     answer = add(num1,num2)
     print answer
 
